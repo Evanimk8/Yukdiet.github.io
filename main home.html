@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Home - Tubuh Sehat</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #4facfe, #8e44ad); /* Background gradasi biru ke ungu */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main-container {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 100%;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      color: #000;
+      font-size: 2.2em;
+      margin-bottom: 30px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .action-btn {
+      background-color: #4facfe;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .action-btn:hover {
+      background-color: #1e90ff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .action-btn {
+        font-size: 0.95em;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <h1>Jagalah kesehatan anda!</h1>
+    <div class="button-group">
+      <a href="naik.html" class="action-btn">Menaikkan berat badan</a>
+      <a href="turun.html" class="action-btn">Menurunkan berat badan</a>
+    </div>
+  </div>
+</body>
+</html>
